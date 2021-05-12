@@ -18,7 +18,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import "./index.css";
+import './index.css';
 
 function Square(props) {
   return (
@@ -61,31 +61,37 @@ class Board extends React.Component {
 
   render() {
     const winner = calculateWinner(this.state.squares);
+    let victory;
+    if (winner) {
+      victory = 'Winner: ' + winner;
+    }
     let status;
     if (winner) {
-      status = 'Winner: ' + winner;
+      status = 'Game Over!';
     } else {
       status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O'); 
     }
 
     return (
       <div>
+        <div className="title">Tic Tac Toe</div>
         <div className="status">{status}</div>
-        <div className="board-row">
+        <div className="board-row-1">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
           {this.renderSquare(2)}
         </div>
-        <div className="board-row">
+        <div className="board-row-2">
           {this.renderSquare(3)}
           {this.renderSquare(4)}
           {this.renderSquare(5)}
         </div>
-        <div className="board-row">
+        <div className="board-row-3">
           {this.renderSquare(6)}
           {this.renderSquare(7)}
           {this.renderSquare(8)}
         </div>
+        <div className="victory">{victory}</div>
       </div>
     );
   }
