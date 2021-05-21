@@ -2,13 +2,13 @@ import React from "react";
 
 class Navbar extends React.Component {
   render() {
-    const {player1, player2, ties, userName1, userName2 } = this.props;
+    const { player1, player2, ties, userName1, userName2 } = this.props;
     return (
       <div className="navbar">
         <div className="title">
-          <h1>Tic Tac Go!</h1>
+          <h1>Tic Tac Toe</h1>
         </div>
-        <div className="stats">
+        <div className="statistics">
           <h2>
             {userName1}:{player1}
           </h2>
@@ -21,6 +21,5 @@ class Navbar extends React.Component {
     );
   }
 }
-
 
 export default Navbar;

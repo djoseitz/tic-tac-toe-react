@@ -24,19 +24,19 @@ class Login extends React.Component {
         <div className="screen">
           <form>
             <div className="form-group">
-              <label>Name Player 1</label>
-              <input 
-                type="name" 
-                id="player1" 
-                className="form-control" 
+              <label>Name Player1</label>
+              <input
+                type="name"
+                id="player1"
+                className="form-control"
                 onChange={this.handleChange}
               />
 
-              <label>Name Player 2</label>
-              <input 
-                type="name" 
-                id="player2" 
-                className="form-control" 
+              <label>Name Player2</label>
+              <input
+                type="name"
+                id="player2"
+                className="form-control"
                 onChange={this.handleChange}
               />
             </div>
