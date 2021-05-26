@@ -24,7 +24,7 @@ class Login extends React.Component {
         <div className="screen">
           <form>
             <div className="form-group">
-              <label>Name Player1</label>
+              <label>Name Player 1</label>
               <input
                 type="name"
                 id="player1"
@@ -32,7 +32,7 @@ class Login extends React.Component {
                 onChange={this.handleChange}
               />
 
-              <label>Name Player2</label>
+              <label>Name Player 2</label>
               <input
                 type="name"
                 id="player2"

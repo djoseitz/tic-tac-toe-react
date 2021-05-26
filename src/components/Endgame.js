@@ -3,7 +3,7 @@ import React from "react";
 class Endgame extends React.Component {
   state = {
     tied: "You guys tied",
-    playerWin: "You win " + this.props.winner + " !!",
+    playerWin: "Congrats, " + this.props.winner + "! You won!!",
   };
   handleClick = () => {
     this.props.endgame(false);
@@ -16,7 +16,7 @@ class Endgame extends React.Component {
         <div className="screen">
           <p> {winner === "Tied" ? tied : playerWin} </p>
           <button className="btn btn-primary" onClick={this.handleClick}>
-            Wanna try again?
+            How about another round?
           </button>
         </div>
       </div>

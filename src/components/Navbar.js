@@ -6,7 +6,7 @@ class Navbar extends React.Component {
     return (
       <div className="navbar">
         <div className="title">
-          <h1>Tic Tac Toe</h1>
+          <h1>Tic Tac Go!</h1>
         </div>
         <div className="statistics">
           <h2>
