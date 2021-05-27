@@ -42,7 +42,7 @@ class Login extends React.Component {
             </div>
 
             <button onClick={this.handleClick} className="btn btn-primary">
-              Submit
+              Start Playing!
             </button>
           </form>
         </div>
